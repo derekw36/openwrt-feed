@@ -1,0 +1,18 @@
+if PACKAGE_wolfMQTT
+
+config WOLFMQTT_HAS_TLS
+    bool "Enable TLS support with wolfSSL"
+    default y
+
+config WOLFMQTT_HAS_V5
+    bool "Enable MQTT v5.0 support"
+    default y
+
+config WOLFMQTT_HAS_SN
+    bool "Enable MQTT-SN support"
+    default y
+
+config WOLFMQTT_HAS_DEBUG
+    bool "Enable debug mode and disable optimizations"
+
+endif
